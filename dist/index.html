@@ -3,9 +3,23 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="./style.css" /> 
 	<title>Top</title>
 </head>
 <body>
-	こんにちは
+	<div>
+		このページはトップページです。
+		7月20日の授業で作成しました。
+	</div>
+	<div>
+		<p>今日は<small id="today"></small>です。</p>
+	</div>
+	<script>
+		date = new Date();
+		year = date.getFullYear();
+		month = date.getMonth() + 1;
+		day = date.getDate();
+		document.getElementById("today").innerHTML = year + "年" + month + "月" + day + "日";
+	</script>
 </body>
 </html>
